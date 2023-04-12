@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Translation App</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  
+</head>
+
+<body>
+  <h1>Language Translation App</h1>
+  <%= form_tag('/translations/translate', method: "post", remote: true, id: "translation_form") do %>
+    <div>
+      <label for="source_language">Source Language:</label>
+      <%= select_tag :source_language, options_for_select([['English', 'en'], ['Spanish', 'es'], ['French', 'fr'], ['German', 'de']]) %>
+    </div>
+    <div>
+      <label for="target_language">Target Language:</label>
+      <%= select_tag :target_language, options_for_select([['English', 'en'], ['Spanish', 'es'], ['French', 'fr'], ['German', 'de']]) %>
+    </div>
+    <div>
+      <label for="text">Text to Translate:</label>
+      <%= text_area_tag :text, nil, rows: 5, cols: 50 %>
+    </div>
+    <%= submit_tag "Translate" %>
+  <% end %>
+
+  <div id="translation_result">
+    <h2>Translation:</h2>
+    <p id="translated_text"></p>
+  </div>
+</body>
+</html>

@@ -445,6 +445,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   google-cloud-translate (~> 3.0)
+  google-cloud-translate-v2
   grade_runner!
   htmlbeautifier
   http
