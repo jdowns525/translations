@@ -13,11 +13,33 @@
   <%= form_tag('/translations/translate', method: "post", remote: true, id: "translation_form") do %>
     <div>
       <label for="source_language">Source Language:</label>
-      <%= select_tag :source_language, options_for_select([['English', 'en'], ['Spanish', 'es'], ['French', 'fr'], ['German', 'de']]) %>
+      <%= select_tag :source_language, options_for_select([['English', 'en'],
+        ['Mandarin Chinese', 'zh'],
+        ['Spanish', 'es'],
+        ['Hindi', 'hi'],
+        ['French', 'fr'],
+        ['Standard Arabic', 'ar'],
+        ['Bengali', 'bn'],
+        ['Russian', 'ru'],
+        ['Portuguese', 'pt'],
+        ['Indonesian', 'id'],
+        ['German', 'de'],
+        ['Japanese', 'ja']]) %>
     </div>
     <div>
       <label for="target_language">Target Language:</label>
-      <%= select_tag :target_language, options_for_select([['English', 'en'], ['Spanish', 'es'], ['French', 'fr'], ['German', 'de']]) %>
+      <%= select_tag :target_language, options_for_select([['English', 'en'],
+        ['Mandarin Chinese', 'zh'],
+        ['Spanish', 'es'],
+        ['Hindi', 'hi'],
+        ['French', 'fr'],
+        ['Standard Arabic', 'ar'],
+        ['Bengali', 'bn'],
+        ['Russian', 'ru'],
+        ['Portuguese', 'pt'],
+        ['Indonesian', 'id'],
+        ['German', 'de'],
+        ['Japanese', 'ja']]) %>
     </div>
     <div>
       <label for="text">Text to Translate:</label>
