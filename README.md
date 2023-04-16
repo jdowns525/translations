@@ -1,7 +1,5 @@
-# Base Rails
+# Language Translator
 
-## Standard Workflow
+## Still in Progress
 
- 1. Start the web server by running `bin/server`.
- 1. Navigate to your live application.
- 1. As you work, remember to navigate to `/git` and **commit often as you work.**
+used Google Cloud API for this project
